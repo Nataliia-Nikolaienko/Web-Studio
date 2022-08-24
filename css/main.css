@@ -657,26 +657,40 @@ img {
   line-height: 1.71;
   font-size: 14px;
   color: #757575;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   .advantages-title {
     text-align: center;
   }
+  .advantages {
+    display: block;
+  }
   .list-item {
-    margin-bottom: 30px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  .list-item {
+  .advantages {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
+  .list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantages {
+    display: flex;
     flex-wrap: nowrap;
+  }
+  .list-item {
+    width: 270px;
+  }
+  .list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .section-about {
