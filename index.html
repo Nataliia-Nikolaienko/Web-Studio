@@ -31,14 +31,14 @@
                 </ul>
             </nav>
             <ul class="menu contact list">
-                <li class="menu__item">
+                <li class="menu__item-contacts">
                     <a class="menu__email link" href="mailto:info@devstudio.com">info@devstudio.com
                         <svg class="menu__contact-icon" width="16" height="12">
                             <use href="./images/sprite.svg#icon-envelope"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="menu__item">
+                <li class="menu__item-contacts">
                     <a class="menu__phone-number link" href="tel:+380961111111">+38 096 111 11 11
                         <svg class="menu__contact-icon" width="10" height="16">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -106,12 +106,12 @@
         
         <!-- HERO -->
 
-        <section class="section hero">
+        <!-- <section class="section hero">
             <div class="container hero-bg">
              <h1 class="main-title">Ефективні рішення для<br>вашого бізнесу</h1>
              <button class="modal-btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
 
         <!-- ADVANTAGES -->
 
@@ -160,28 +160,54 @@
         </section> -->
 
         <!-- ABOUT -->
-
-        <!-- <section class="section-about section">
+<!-- 
+        <section class="section-about section">
             <div class="container">
             <h2 class="content-title secondary-title">Чим ми займаємося</h2>
             <ul class="menu list">
                 <li class="list-item">
                     <div class="about-overlay-container">
-                        <img class="project-foto" src="./images/about/box1.jpg" alt="людина набирає текст на планшеті" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/index/about/box1-desktop.jpg 1x, ./images/desktop/index/about/box1-desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/tablet/index/about/box1-tablet.jpg 1x, ./images/tablet/index/about/box1-tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/mobile/index/about/box1-mobile.jpg 1x, ./images/mobile/index/about/box1-mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                        <img class="project-foto" src="./images/desktop/index/about/box1-desktop.jpg" alt="людина набирає текст на планшеті" width="370" height="294">
+                        </picture>
                         <p class="overlay-about">десктопні додатки</p>
                     </div>
                 </li>
                 <li class="list-item">
                     <div class="about-overlay-container">
-                        <img class="project-foto" src="./images/about/box2.jpg" alt="людина тримає телефон біля ноутбука" width="370"
+                        <picture>
+                            <source srcset="./images/desktop/index/about/box2-desktop.jpg 1x, ./images/desktop/index/about/box2-desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/index/about/box2-tablet.jpg 1x, ./images/tablet/index/about/box2-tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/index/about/box2-mobile.jpg 1x, ./images/mobile/index/about/box2-mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                        <img class="project-foto" src="./images/desktop/index/about/box2-desktop.jpg" alt="людина тримає телефон біля ноутбука" width="370"
                             height="294">
+                            </picture>
                         <p class="overlay-about">мобільні додатки</p>
                     </div>
                 </li>
                 <li class="list-item">
                     <div class="about-overlay-container">
-                            <img class="project-foto" src="./images/desktop/index/about/box3-desktop.jpg" alt="людина тримає планшет" width="370" height="294">
-                        
+                        <picture>
+                            <source srcset="./images/desktop/index/about/box3-desktop.jpg 1x, ./images/desktop/index/about/box3-desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/index/about/box3-tablet.jpg 1x, ./images/tablet/index/about/box3-tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mobile/index/about/box3-mobile.jpg 1x, ./images/mobile/index/about/box3-mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img class="project-foto" src="./images/mobile/index/about/box3-desktop.jpg" alt="людина тримає планшет" width="370" height="294">
+                            </picture>
                         <p class="overlay-about">дизайнерські рішення</p>
                     </div>
                 </li>
@@ -383,7 +409,7 @@
 
     <!-- FOOTER -->
 
-    <!-- <footer>
+    <footer>
         <div class="footer-container container">
             <div class="adress-footer">
             <a class="logo link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
@@ -446,7 +472,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <!--MODAL WINDOW-->
 
