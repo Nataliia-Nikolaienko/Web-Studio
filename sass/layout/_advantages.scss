@@ -34,25 +34,22 @@
         text-align: center;
     }
 
-    .advantages {
-    display: block;
-    }
-
     .list-item {
-        // margin-bottom: 30px;
     width: 100%;
 }
-   
+    .advantages-list {
+        margin-bottom: 30px;
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   
     .advantages {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
     }
-    .list-item {
+    .list-item-advantages {
         flex-basis: calc((100% - 30px)/2);
     }
 }
@@ -63,7 +60,7 @@
         flex-wrap: nowrap;
     }
 
-    .list-item {
+    .list-item-advantages {
     width: 270px;
         &:not(:last-child) {
             margin-right: 30px;

@@ -187,12 +187,12 @@ footer {
         justify-content: space-around;
     }
 
-    .subscribe-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        }
+    // .subscribe-wrapper {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 100%;
+    //     align-items: center;
+    //     }
 
 }
 
@@ -209,11 +209,16 @@ footer {
         }
 
     .subscribe-wrapper {
-        margin-left: auto;
+        margin-left: 93px;
+        align-items: baseline;
         }
 
     .subscribe-wrapper__modal-form {
         display: flex;
+    }
+
+    .subscribe-wrapper__input {
+        margin-bottom: auto;
     }
 
 }
