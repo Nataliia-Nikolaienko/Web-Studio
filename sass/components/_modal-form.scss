@@ -41,7 +41,7 @@
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
@@ -83,8 +83,8 @@
 }
 
 .modal-form-check-desc {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
@@ -147,5 +147,15 @@
     &:focus {
         background-color: var(--accent-color);
         }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-form {
+        line-height: 1.15;
+    }
+    .modal-form-check-desc {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 

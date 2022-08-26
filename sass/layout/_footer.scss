@@ -187,13 +187,15 @@ footer {
         justify-content: space-around;
     }
 
-    // .subscribe-wrapper {
-    //     display: flex;
-    //     flex-direction: column;
-    //     width: 100%;
-    //     align-items: center;
-    //     }
+    .subscribe-wrapper__modal-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .subscribe-wrapper {
+        margin-top: 60px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -215,6 +217,7 @@ footer {
 
     .subscribe-wrapper__modal-form {
         display: flex;
+        flex-direction: row;
     }
 
     .subscribe-wrapper__input {

@@ -6,11 +6,11 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
 
-    margin-right: 90px;
 }
 
 .logo-header {
     color: #000000;
+    margin-right: 90px;
 }
 
 .page-header {
@@ -71,7 +71,7 @@
     }
 }
 
-.menu-header__link.menu__link_current:hover:after {
+.menu-header__link.menu-header__link_current:hover:after {
     background-color: var(--accent-color);
 }
 
@@ -156,7 +156,7 @@
         margin-right: 50px;
     }
 
-    .menu-header__item-contacts {
+    .menu-header__item-contacts:not(:last-child) {
         margin-bottom: 10px;
     }
 
@@ -199,17 +199,13 @@
         margin-left: auto;
     }
 
-    .menu-header__email,
-    .menu-header__phone-number {
-        display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        display: flex;
-        align-items: center;
-        }
-
     .menu-header__item {
         margin-right: 50px;
+        }
+
+    .menu-header__item-contacts {
+        display: flex;
+        align-items: center;
         }
 
     .menu-header__item-contacts:not(:last-child) {
