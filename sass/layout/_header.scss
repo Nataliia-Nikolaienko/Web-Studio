@@ -10,7 +10,7 @@
 
 .logo-header {
     color: #000000;
-    margin-right: 90px;
+    margin-right: 93px;
 }
 
 .page-header {
@@ -111,46 +111,46 @@
 
     transition: fill var(--transition-dur-and-fun);
 
-    &:hover,
+    &.menu-header__contact-icon:hover,
     &:focus {
-        fill: #2196F3;
+        fill: var(--accent-color);
     }
 }
 
 @media screen and (max-width: 767px) {
     .menu-header {
         display: none;
-        }
-    
-        .contact {
-        display: none;
-        }
+    }
 
-        .page-header {
+    .contact {
+        display: none;
+    }
+
+    .page-header {
         padding-top: 10px;
         padding-bottom: 10px;
-        }
-        
-        .page-header-container {
+    }
+
+    .page-header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        }
+    }
 
-        .mobile-menu-open {
+    .mobile-menu-open {
         background-color: transparent;
         border: none;
         height: 40px;
         padding: 0;
-                        }
+    }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
+
     .mobile-menu-open {
         display: none;
-        }
+    }
 
     .menu-header__item:not(:last-child) {
         margin-right: 50px;
@@ -168,7 +168,7 @@
     .menu-header__phone-number {
         margin-bottom: 10px;
     }
- 
+
 }
 
 
@@ -176,19 +176,18 @@
 @media screen and (min-width: 1200px) {
 
     .mobile-menu-open {
-            display: none;
-        }
+        display: none;
+    }
 
     .logo {
         font-size: 26px;
         line-height: 1.19;
-        margin-right: 93px;
-        }
-    
+    }
+
     .logo-header {
         padding-top: 24px;
         padding-bottom: 24px;
-        }
+    }
 
     .menu-header {
         align-items: center;
@@ -199,21 +198,22 @@
         margin-left: auto;
     }
 
-    .menu-header__item {
+    .menu-header__item:not(:last-child) {
         margin-right: 50px;
-        }
+    }
 
     .menu-header__item-contacts {
         display: flex;
         align-items: center;
-        }
+    }
 
     .menu-header__item-contacts:not(:last-child) {
         margin-right: 30px;
-        }
+    }
 
     .menu-header__contact-icon {
         margin-right: 10px;
+
     }
 
 }

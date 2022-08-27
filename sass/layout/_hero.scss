@@ -1,9 +1,11 @@
 .hero {
     margin-top: 0px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     
 
     background-color: #c4c4c4;
@@ -82,11 +84,17 @@ screen and (min-resolution: 192dppx) and (min-width: 768px) {
 @media screen and (min-width: 1200px) {
     .hero {
         background-image: url('../images/hero/hero_bg-desktop.jpg');
+        
     }
 
     .main-title {
         font-size: 44px;
         line-height: 1.36;
+    }
+
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
 
